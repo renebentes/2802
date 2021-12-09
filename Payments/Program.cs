@@ -7,5 +7,10 @@ class Pagamento
     DateTime Vencimento;
 
     // Métodos
-    void Pagar() { }
+    void Pagar()
+    {
+        ConsultarSaldoDoCartao("12345");
+    }
+
+    public void ConsultarSaldoDoCartao(string numero) { }
 }
