@@ -1,16 +1,40 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿var pagamentoBoleto = new PagamentoBoleto
+{
+    Vencimento = DateTime.Now,
+    NumeroBoleto = "12345"
+};
+
+pagamentoBoleto.Pagar();
+
+var pagamento = new Pagamento
+{
+    Vencimento = DateTime.Now
+};
+
+pagamento.Pagar();
+
 Console.WriteLine("Hello, World!");
 
 class Pagamento
 {
     // Propriedades
-    DateTime Vencimento;
+    public DateTime Vencimento;
 
     // Métodos
-    void Pagar()
+    public void Pagar()
     {
         ConsultarSaldoDoCartao("12345");
     }
 
     public void ConsultarSaldoDoCartao(string numero) { }
+}
+
+class PagamentoBoleto : Pagamento
+{
+    public string NumeroBoleto;
+}
+
+class PagamentoCartaoDeCredito : Pagamento
+{
+    public string Numero;
 }
