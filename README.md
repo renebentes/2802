@@ -20,8 +20,9 @@ Há links específicos para cada commit de finalização de uma aula.
 
 ### Lista de Aulas
 
-| Aulas | Descrição |
-| ----- | --------- |
+| Aulas                            | Descrição                             |
+| -------------------------------- | ------------------------------------- |
+| [aula-1-5](../../commit/917a103) | Módulo 1: Fundamentos: Encapsulamento |
 
 ## Autor
 
