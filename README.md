@@ -23,6 +23,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | Aulas                            | Descrição                             |
 | -------------------------------- | ------------------------------------- |
 | [aula-1-5](../../commit/917a103) | Módulo 1: Fundamentos: Encapsulamento |
+| [aula-1-6](../../commit/faa27c3) | Módulo 1: Fundamentos: Abstração      |
 
 ## Autor
 
