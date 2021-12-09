@@ -24,6 +24,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | -------------------------------- | ------------------------------------- |
 | [aula-1-5](../../commit/917a103) | Módulo 1: Fundamentos: Encapsulamento |
 | [aula-1-6](../../commit/faa27c3) | Módulo 1: Fundamentos: Abstração      |
+| [aula-1-7](../../commit/7132729) | Módulo 1: Fundamentos: Herança        |
 
 ## Autor
 
