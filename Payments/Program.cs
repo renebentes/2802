@@ -21,17 +21,19 @@ class Pagamento
     public DateTime Vencimento;
 
     // Métodos
-    public void Pagar()
-    {
-        ConsultarSaldoDoCartao("12345");
-    }
+    public virtual void Pagar() { }
 
-    public void ConsultarSaldoDoCartao(string numero) { }
+    public override string ToString() => Vencimento.ToString("dd/MM/YYYY");
 }
 
 class PagamentoBoleto : Pagamento
 {
     public string NumeroBoleto;
+
+    public override void Pagar()
+    {
+        // Regra para boleto
+    }
 }
 
 class PagamentoCartaoDeCredito : Pagamento
