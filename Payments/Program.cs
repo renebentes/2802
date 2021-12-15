@@ -1,42 +1,24 @@
-﻿var pagamentoBoleto = new PagamentoBoleto
-{
-    Vencimento = DateTime.Now,
-    NumeroBoleto = "12345"
-};
-
-pagamentoBoleto.Pagar();
-
-var pagamento = new Pagamento
-{
-    Vencimento = DateTime.Now
-};
-
-pagamento.Pagar();
+﻿var pagamento = new Pagamento();
 
 Console.WriteLine("Hello, World!");
 
-class Pagamento
+// private - Visível apenas dentro da classe de definição
+// protected - Visível pela classe de definição e suas filhas
+// internal -  Visível para um mesmo Assembly
+// public - Visível para tudo
+public class Pagamento
 {
     // Propriedades
-    public DateTime Vencimento;
+    protected DateTime Vencimento;
 
     // Métodos
-    public virtual void Pagar() { }
-
-    public override string ToString() => Vencimento.ToString("dd/MM/YYYY");
+    private void Pagar() { }
 }
 
 class PagamentoBoleto : Pagamento
 {
-    public string NumeroBoleto;
-
-    public override void Pagar()
+    public PagamentoBoleto()
     {
-        // Regra para boleto
+        Vencimento = DateTime.Now;
     }
-}
-
-class PagamentoCartaoDeCredito : Pagamento
-{
-    public string Numero;
 }
