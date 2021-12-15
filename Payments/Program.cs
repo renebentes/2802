@@ -10,15 +10,14 @@ public class Pagamento
 {
     // Propriedades
     protected DateTime Vencimento;
+    Address BillingAddress;
 
     // Métodos
     private void Pagar() { }
 }
 
-class PagamentoBoleto : Pagamento
+// Tipos Complexos - classes ou structs
+public struct Address
 {
-    public PagamentoBoleto()
-    {
-        Vencimento = DateTime.Now;
-    }
+    string ZipCode;
 }
