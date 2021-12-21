@@ -1,15 +1,17 @@
-﻿using (var pagamento = new Pagamento()) { }
+﻿var pagamento = new Pagamento();
 
 Console.WriteLine("Hello, World!");
-public class Pagamento : IDisposable
+public class Pagamento
 {
     public Pagamento()
     {
         Console.WriteLine("Iniciando pagamento");
     }
+}
 
-    public void Dispose()
-    {
-        Console.WriteLine("Finalizando pagamento");
-    }
+// Disponível para a toda a aplicação
+// Qualquer valor alterado serve para todos
+public static class Settings
+{
+    public static string Url { get; set; }
 }
