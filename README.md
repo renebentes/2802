@@ -30,6 +30,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-1-10](../../commit/1bdb516) | Módulo 1: Fundamentos: Tipos Complexos         |
 | [aula-1-11](../../commit/f19aa33) | Módulo 1: Fundamentos: Propriedades            |
 | [aula-1-12](../../commit/fdc32f6) | Módulo 1: Fundamentos: Métodos                 |
+| [aula-1-13](../../commit/a7cb28e) | Módulo 1: Fundamentos: Using e Dispose         |
 
 ## Autor
 
