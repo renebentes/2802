@@ -8,8 +8,17 @@ Console.WriteLine("Hello, World!");
 // public - Visível para tudo
 public class Pagamento
 {
-    // Propriedades
-    protected DateTime Vencimento;
+    // Propriedades - Permite interação antes de obter ou atribuir valor
+    public DateTime Vencimento { get; set; }
+    public DateTime DataPagamento { get; private set; }
+    private DateTime _dataAbertura;
+    public DateTime DataAbertura
+    {
+        get { return _dataAbertura; }
+        set { _dataAbertura = value; }
+    }
+
+    // Variáveis - Acesso direto para obter e atribuir valor
     Address BillingAddress;
 
     // Métodos
