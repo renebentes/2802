@@ -1,4 +1,4 @@
-﻿var pagamento = new Pagamento();
+﻿var pagamento = new Pagamento(DateTime.Now);
 
 Console.WriteLine("Hello, World!");
 
@@ -9,6 +9,10 @@ Console.WriteLine("Hello, World!");
 public class Pagamento
 {
     // Propriedades - Permite interação antes de obter ou atribuir valor
+    public Pagamento(DateTime vencimento)
+    {
+        Vencimento = vencimento;
+    }
     public DateTime Vencimento { get; set; }
     public DateTime DataPagamento { get; private set; }
     private DateTime _dataAbertura;
@@ -22,7 +26,24 @@ public class Pagamento
     Address BillingAddress;
 
     // Métodos
-    private void Pagar() { }
+    public virtual void Pagar() { }
+
+    // Sobrecarga
+    public void Pagar(string numero) { }
+}
+
+public class PagamentoCartao : Pagamento
+{
+    public PagamentoCartao(DateTime vencimento)
+    : base(vencimento)
+    {
+
+    }
+    // Sobrescrita
+    public override void Pagar()
+    {
+        base.Pagar();
+    }
 }
 
 // Tipos Complexos - classes ou structs
