@@ -29,6 +29,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-1-9](../../commit/d6c18b5)  | Módulo 1: Fundamentos: Modificadores de Acesso |
 | [aula-1-10](../../commit/1bdb516) | Módulo 1: Fundamentos: Tipos Complexos         |
 | [aula-1-11](../../commit/f19aa33) | Módulo 1: Fundamentos: Propriedades            |
+| [aula-1-12](../../commit/fdc32f6) | Módulo 1: Fundamentos: Métodos                 |
 
 ## Autor
 
