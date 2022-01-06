@@ -1,7 +1,18 @@
-﻿using Payments;
+﻿Console.WriteLine("Hello, World!");
 
-Console.WriteLine("Hello, World!");
+public interface IPagamento
+{
+    DateTime Vencimento { get; set; }
 
-var payment = new Payment();
-payment.PropriedadeA = string.Empty;
-payment.PropriedadeB = string.Empty;
+    void Pagar(double valor);
+}
+
+public class Pagamento : IPagamento
+{
+    public DateTime Vencimento { get; set; }
+
+    public void Pagar(double valor)
+    {
+        throw new NotImplementedException();
+    }
+}
