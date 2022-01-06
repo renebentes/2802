@@ -7,12 +7,36 @@ public interface IPagamento
     void Pagar(double valor);
 }
 
-public class Pagamento : IPagamento
+public abstract class Pagamento : IPagamento
 {
     public DateTime Vencimento { get; set; }
 
-    public void Pagar(double valor)
+    public virtual void Pagar(double valor)
     {
         throw new NotImplementedException();
+    }
+
+    class PagamentoBoleto : Pagamento
+    {
+        public override void Pagar(double valor)
+        {
+            base.Pagar(valor);
+        }
+    }
+
+    class PagamentoCartaoCredito : Pagamento
+    {
+        public override void Pagar(double valor)
+        {
+            base.Pagar(valor);
+        }
+    }
+
+    class PagamentoApplePay : Pagamento
+    {
+        public override void Pagar(double valor)
+        {
+            base.Pagar(valor);
+        }
     }
 }
