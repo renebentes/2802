@@ -32,6 +32,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-1-12](../../commit/fdc32f6) | Módulo 1: Fundamentos: Métodos                 |
 | [aula-1-13](../../commit/a7cb28e) | Módulo 1: Fundamentos: Using e Dispose         |
 | [aula-1-14](../../commit/56a4117) | Módulo 1: Fundamentos: Classes estáticas       |
+| [aula-1-15](../../commit/daae6b3) | Módulo 1: Fundamentos: Classes seladas         |
 
 ## Autor
 
