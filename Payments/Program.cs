@@ -1,28 +1,18 @@
-﻿Console.WriteLine("Hello, World!");
+﻿var pessoaA = new Pessoa(1, "Rene");
+var pessoaB = new Pessoa(1, "Rene");
 
-// Upcast
-var pessoa = new Pessoa();
-pessoa = new PessoaFisica();
-pessoa = new PessoaJuridica();
+Console.WriteLine(pessoaA.Equals(pessoaB));
 
-// Downcast
-var pessoaFisica = new PessoaFisica();
-pessoaFisica = (PessoaFisica)pessoa;
-
-var pessoaJuridica = new PessoaJuridica();
-pessoaJuridica = (PessoaJuridica)pessoa;
-
-class Pessoa
+class Pessoa : IEquatable<Pessoa>
 {
+    public Pessoa(int id, string nome)
+    {
+        Id = id;
+        Nome = nome;
+    }
+
+    public int Id { get; set; }
     public string Nome { get; set; }
-}
 
-class PessoaFisica : Pessoa
-{
-    public string Cpf { get; set; }
-}
-
-class PessoaJuridica : Pessoa
-{
-    public string Cnpj { get; set; }
+    public bool Equals(Pessoa? other) => Id == other?.Id;
 }
