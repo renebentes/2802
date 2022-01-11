@@ -36,6 +36,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-1-16](../../commit/ab38385) | Módulo 1: Fundamentos: Partial Class           |
 | [aula-1-17](../../commit/d9eba79) | Módulo 1: Fundamentos: Interfaces              |
 | [aula-1-18](../../commit/bae5a83) | Módulo 1: Fundamentos: Classes Abstratas       |
+| [aula-1-19](../../commit/58db24f) | Módulo 1: Fundamentos: Upcast e Downcast       |
 
 ## Autor
 
