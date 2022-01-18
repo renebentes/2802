@@ -1,16 +1,22 @@
 ﻿var person = new Person();
 var payment = new Payment();
-var context = new DataContext<Person>();
+var subscription = new Subscription();
+var context = new DataContext<Person, Payment, Subscription>();
 context.Save(person);
-
-// Erro - Cada instância aceita um tipo por vez
 context.Save(payment);
+context.Save(subscription);
 
-// É possível ter múltiplos tipos
-// class DataContext<TPerson, TPayment>
-class DataContext<T>
+// Limitando tipos aceitos
+class DataContext<TPerson, TPayment, TSubscription>
+    where TPerson : Person
+    where TPayment : Payment
+    where TSubscription : Subscription
 {
-    public void Save(T entity) { }
+    public void Save(TPerson entity) { }
+
+    public void Save(TPayment entity) { }
+
+    public void Save(TSubscription entity) { }
 }
 
 class Person { }
