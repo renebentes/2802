@@ -1,9 +1,48 @@
-﻿static void RealizarPagamento(double valor) => Console.WriteLine($"Pago o valor de {valor}");
+﻿var room = new Room(3);
+room.RoomSoldOutEvent += OnRoomSoldOut;
 
-var pagar = new Pagamento.Pagar(RealizarPagamento);
-pagar(25);
+room.ReserveSeat();
+room.ReserveSeat();
+room.ReserveSeat();
+room.ReserveSeat();
+room.ReserveSeat();
 
-class Pagamento
+static void OnRoomSoldOut(object? sender, EventArgs e)
 {
-    public delegate void Pagar(double valor);
+    Console.WriteLine("Sala lotada");
+}
+
+class Room
+{
+    private int _seatsInUse;
+
+    public Room(int seats)
+    {
+        Seats = seats;
+        _seatsInUse = 0;
+    }
+
+    public int Seats { get; set; }
+
+    public event EventHandler RoomSoldOutEvent;
+
+    public void ReserveSeat()
+    {
+        _seatsInUse++;
+
+        if (_seatsInUse > Seats)
+        {
+            OnRoomSoldOutEvent(EventArgs.Empty);
+        }
+        else
+        {
+            Console.WriteLine("Assento reservado");
+        }
+    }
+
+    protected virtual void OnRoomSoldOutEvent(EventArgs e)
+    {
+        var handler = RoomSoldOutEvent;
+        handler?.Invoke(this, e);
+    }
 }
