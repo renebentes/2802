@@ -1,48 +1,20 @@
-﻿var room = new Room(3);
-room.RoomSoldOutEvent += OnRoomSoldOut;
+﻿var person = new Person();
+var payment = new Payment();
+var context = new DataContext<Person>();
+context.Save(person);
 
-room.ReserveSeat();
-room.ReserveSeat();
-room.ReserveSeat();
-room.ReserveSeat();
-room.ReserveSeat();
+// Erro - Cada instância aceita um tipo por vez
+context.Save(payment);
 
-static void OnRoomSoldOut(object? sender, EventArgs e)
+// É possível ter múltiplos tipos
+// class DataContext<TPerson, TPayment>
+class DataContext<T>
 {
-    Console.WriteLine("Sala lotada");
+    public void Save(T entity) { }
 }
 
-class Room
-{
-    private int _seatsInUse;
+class Person { }
 
-    public Room(int seats)
-    {
-        Seats = seats;
-        _seatsInUse = 0;
-    }
+class Payment { }
 
-    public int Seats { get; set; }
-
-    public event EventHandler RoomSoldOutEvent;
-
-    public void ReserveSeat()
-    {
-        _seatsInUse++;
-
-        if (_seatsInUse > Seats)
-        {
-            OnRoomSoldOutEvent(EventArgs.Empty);
-        }
-        else
-        {
-            Console.WriteLine("Assento reservado");
-        }
-    }
-
-    protected virtual void OnRoomSoldOutEvent(EventArgs e)
-    {
-        var handler = RoomSoldOutEvent;
-        handler?.Invoke(this, e);
-    }
-}
+class Subscription { }
