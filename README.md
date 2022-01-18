@@ -39,6 +39,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-1-19](../../commit/58db24f) | Módulo 1: Fundamentos: Upcast e Downcast       |
 | [aula-1-20](../../commit/3953a03) | Módulo 1: Fundamentos: Comparando Objetos      |
 | [aula-1-21](../../commit/c584d56) | Módulo 1: Fundamentos: Delegates               |
+| [aula-1-22](../../commit/f39ea0b) | Módulo 1: Fundamentos: Events                  |
 
 ## Autor
 
