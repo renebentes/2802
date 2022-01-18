@@ -42,6 +42,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-1-22](../../commit/f39ea0b) | Módulo 1: Fundamentos: Events                  |
 | [aula-1-23](../../commit/516ea9b) | Módulo 1: Generics - Parte 1                   |
 | [aula-1-24](../../commit/bf2fa5c) | Módulo 1: Generics - Parte 2                   |
+| [aula-1-25](../../commit/a609706) | Módulo 1: Listas - Parte 1                     |
 
 ## Autor
 
