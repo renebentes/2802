@@ -1,26 +1,12 @@
-﻿var person = new Person();
-var payment = new Payment();
-var subscription = new Subscription();
-var context = new DataContext<Person, Payment, Subscription>();
-context.Save(person);
-context.Save(payment);
-context.Save(subscription);
+﻿var payment = new Payment();
 
-// Limitando tipos aceitos
-class DataContext<TPerson, TPayment, TSubscription>
-    where TPerson : Person
-    where TPayment : Payment
-    where TSubscription : Subscription
-{
-    public void Save(TPerson entity) { }
+// Com o var sempre teremos um objeto do tipo List
+var payments = new List<Payment>();
+payments.Add(payment);
+payments.Remove(payment);
 
-    public void Save(TPayment entity) { }
-
-    public void Save(TSubscription entity) { }
-}
-
-class Person { }
+// Ao usar o tipo explícito, o objeto será limitado ao tipo
+// definido. Só os métodos do tipo serão permitidos
+IEnumerable<string> strings = new List<string>();
 
 class Payment { }
-
-class Subscription { }
