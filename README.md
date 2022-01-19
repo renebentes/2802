@@ -51,6 +51,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-2-4](../../commit/3d989b1)  | Módulo 2: Mão na Massa: Trabalhando com listas           |
 | [aula-2-5](../../commit/4dc4d99)  | Módulo 2: Mão na Massa: Enumeradores                     |
 | [aula-2-6](../../commit/2971287)  | Módulo 2: Mão na Massa: Modelando a Carreira             |
+| [aula-2-7](../../commit/6e3edf0)  | Módulo 2: Mão na Massa: Método Construtor                |
 
 ## Autor
 
