@@ -29,6 +29,11 @@ payments.Remove(payment);
 // .Skip - Pula a quantidade de itens informada
 // .Take - Retorna a quantidade de itens informada
 
+// Conversores
+// .AsEnumerable - Trata como um Enumerable<T>;
+// .ToList - Converte para uma List<T>
+// .ToArray - Converte para um T[]
+
 class Payment
 {
     public int Id { get; set; }
