@@ -45,6 +45,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-1-25](../../commit/a609706) | Módulo 1: Listas - Parte 1                     |
 | [aula-1-26](../../commit/0de3321) | Módulo 1: Listas - Parte 2                     |
 | [aula-1-27](../../commit/2d31cbb) | Módulo 1: Listas - Parte 3                     |
+| [aula-2-1](../../commit/7020b55)  | Módulo 2: Mão na Massa: Introdução             |
 
 ## Autor
 
