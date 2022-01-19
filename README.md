@@ -40,11 +40,11 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-1-20](../../commit/3953a03) | Módulo 1: Fundamentos: Comparando Objetos      |
 | [aula-1-21](../../commit/c584d56) | Módulo 1: Fundamentos: Delegates               |
 | [aula-1-22](../../commit/f39ea0b) | Módulo 1: Fundamentos: Events                  |
-| [aula-1-23](../../commit/516ea9b) | Módulo 1: Generics - Parte 1                   |
-| [aula-1-24](../../commit/bf2fa5c) | Módulo 1: Generics - Parte 2                   |
-| [aula-1-25](../../commit/a609706) | Módulo 1: Listas - Parte 1                     |
-| [aula-1-26](../../commit/0de3321) | Módulo 1: Listas - Parte 2                     |
-| [aula-1-27](../../commit/2d31cbb) | Módulo 1: Listas - Parte 3                     |
+| [aula-1-23](../../commit/516ea9b) | Módulo 1: Fundamentos: Generics - Parte 1      |
+| [aula-1-24](../../commit/bf2fa5c) | Módulo 1: Fundamentos: Generics - Parte 2      |
+| [aula-1-25](../../commit/a609706) | Módulo 1: Fundamentos: Listas - Parte 1        |
+| [aula-1-26](../../commit/0de3321) | Módulo 1: Fundamentos: Listas - Parte 2        |
+| [aula-1-27](../../commit/2d31cbb) | Módulo 1: Fundamentos: Listas - Parte 3        |
 | [aula-2-1](../../commit/7020b55)  | Módulo 2: Mão na Massa: Introdução             |
 
 ## Autor
