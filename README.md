@@ -47,6 +47,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-1-27](../../commit/2d31cbb) | Módulo 1: Fundamentos: Listas - Parte 3                  |
 | [aula-2-1](../../commit/7020b55)  | Módulo 2: Mão na Massa: Introdução                       |
 | [aula-2-2](../../commit/fdc9bfb)  | Módulo 2: Mão na Massa: Iniciando o Contexto de conteúdo |
+| [aula-2-3](../../commit/0961340)  | Módulo 2: Mão na Massa: Herança e classes abstratas      |
 
 ## Autor
 
