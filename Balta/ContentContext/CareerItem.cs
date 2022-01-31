@@ -1,8 +1,6 @@
-using System;
-
 namespace Balta.ContentContext;
 
-public class CareerItem
+public class CareerItem : Entity
 {
     public CareerItem(int order, string title, string description, Course course)
     {

@@ -1,6 +1,6 @@
 namespace Balta.ContentContext;
 
-public class Module
+public class Module : Entity
 {
     public Module()
     {

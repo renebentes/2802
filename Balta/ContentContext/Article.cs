@@ -1,5 +1,3 @@
-using Balta.NotificationContext;
-
 namespace Balta.ContentContext;
 
 public class Article : Content
@@ -9,6 +7,4 @@ public class Article : Content
     {
 
     }
-
-    public IList<Notification> Notifications { get; set; }
 }
