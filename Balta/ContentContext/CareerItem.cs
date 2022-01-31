@@ -1,3 +1,5 @@
+using System;
+
 namespace Balta.ContentContext;
 
 public class CareerItem
@@ -7,7 +9,7 @@ public class CareerItem
         Order = order;
         Title = title;
         Description = description;
-        Course = course;
+        Course = course ?? throw new ArgumentNullException("O curso não pode ser nulo");
     }
     public int Order { get; set; }
 
