@@ -59,6 +59,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-2-13](../../commit/04bf174) | Módulo 2: Mão na Massa: Exibindo as notificações         |
 | [aula-2-14](../../commit/d2348d3) | Módulo 2: Mão na Massa: Contexto de Assinaturas          |
 | [aula-2-15](../../commit/57682df) | Módulo 2: Mão na Massa: Validando as regras de negócio   |
+| [aula-2-16](../../commit/67a2724) | Módulo 2: Mão na Massa: Conclusão                        |
 
 ## Autor
 
