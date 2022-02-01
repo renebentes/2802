@@ -56,6 +56,7 @@ Há links específicos para cada commit de finalização de uma aula.
 | [aula-2-9](../../commit/18a4ae2)  | Módulo 2: Mão na Massa: Regras de Negócio                |
 | [aula-2-11](../../commit/8f761fb) | Módulo 2: Mão na Massa: Criando a classe de notificação  |
 | [aula-2-12](../../commit/109f3a1) | Módulo 2: Mão na Massa: Notificações e Herança           |
+| [aula-2-13](../../commit/04bf174) | Módulo 2: Mão na Massa: Exibindo as notificações         |
 
 ## Autor
 
