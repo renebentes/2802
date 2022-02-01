@@ -1,4 +1,5 @@
 ﻿using Balta.ContentContext;
+using Balta.SubscriptionContext;
 
 using System.Collections.Generic;
 
@@ -49,3 +50,7 @@ foreach (var career in careers)
         }
     }
 }
+
+var payPalSubscription = new PayPalSubscription();
+var student = new Student();
+student.CreateSubscription(payPalSubscription);
