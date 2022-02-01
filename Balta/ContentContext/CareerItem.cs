@@ -1,3 +1,5 @@
+using Balta.NotificationContext;
+
 namespace Balta.ContentContext;
 
 public class CareerItem : Entity
@@ -7,7 +9,13 @@ public class CareerItem : Entity
         Order = order;
         Title = title;
         Description = description;
-        Course = course ?? throw new ArgumentNullException("O curso não pode ser nulo");
+        Course = course;
+
+        if (Course is null)
+        {
+            AddNotification(new Notification(nameof(Course), "O curso não pode ser nulo"));
+        }
+
     }
     public int Order { get; set; }
 
