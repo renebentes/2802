@@ -9,4 +9,8 @@ public class Student : Entity
     public string Email { get; set; }
 
     public User User { get; set; }
+
+    public IList<Subscription> Subscriptions { get; set; }
+
+    public bool IsPremium => Subscriptions.Any(x => !x.IsInactive);
 }
